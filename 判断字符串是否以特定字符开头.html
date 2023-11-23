@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>判断字符串第一个字符为点</title>
+  <title>判断字符串是否以特定字符开头</title>
 </head>
 <body>
 
@@ -16,9 +16,29 @@
     } else {
         console.log("第一个字符不是点号");
     }
-    // startsWith()方法来判断字符串是否以特定字符开头
+
+    
+    // startsWith()方法来判断c字符串是否以特定字符开头
     let str1 = "hello.world";
     if (str1.startsWith('.')) {
+        console.log("第一个字符是点号");
+    } else {
+        console.log("第一个字符不是点号");
+    }
+
+
+    // 可以使用JavaScript的startsWith()方法来判断字符串是否以特定字符开头
+    let str2 = "hello.world";
+    if (str2.startsWith('.')) {
+        console.log("第一个字符是点号");
+    } else {
+        console.log("第一个字符不是点号");
+    }
+
+
+    // startsWith()方法来判断c字符串是否以特定字符开头
+    let str3 = ".hello.world";
+    if (str3[0]==='.') {
         console.log("第一个字符是点号");
     } else {
         console.log("第一个字符不是点号");
